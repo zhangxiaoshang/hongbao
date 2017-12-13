@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import 'purecss'
+import 'purecss/build/grids-responsive.css'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
