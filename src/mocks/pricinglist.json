@@ -1,0 +1,131 @@
+{
+  "status": "success",
+  "message": "成功获取红包列表",
+  "body": {
+    "list": [
+        {
+          "id": 11300,
+          "no": "0356",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第9个领取的人得大红包",
+          "urlid": "a1c7e33504db6be1",
+          "createtime": "11:29",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11299,
+          "no": "0355",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第9个领取的人得大红包",
+          "urlid": "bb5c0a9ae1ff3033",
+          "createtime": "11:29",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11298,
+          "no": "0354",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第6个领取的人得大红包",
+          "urlid": "93a39fccf3157e1b",
+          "createtime": "11:28",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11297,
+          "no": "0353",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第6个领取的人得大红包",
+          "urlid": "20745af834093014",
+          "createtime": "11:28",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11295,
+          "no": "0351",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第9个领取的人得大红包",
+          "urlid": "b80a2ce5ac29e4d6",
+          "createtime": "11:27",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11294,
+          "no": "0350",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "用美图秀秀自拍一秒变插画，领饿了么红包！",
+          "urlid": "3f01838c0f311824",
+          "createtime": "11:26",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11293,
+          "no": "0349",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第8个领取的人得大红包",
+          "urlid": "865913a8cc1dbf45",
+          "createtime": "11:26",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11291,
+          "no": "0347",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第8个领取的人得大红包",
+          "urlid": "22da63b204ee2ca7",
+          "createtime": "11:26",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11290,
+          "no": "0346",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第7个领取的人得大红包",
+          "urlid": "1cc5c94cfd28a845",
+          "createtime": "11:26",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        },
+        {
+          "id": 11289,
+          "no": "0345",
+          "typename": "饿了么",
+          "type": 1,
+          "title": "饿了么拼手气，第7个领取的人得大红包",
+          "urlid": "36a37328e907344a",
+          "createtime": "11:25",
+          "contributor": "bolingboling",
+          "from": "personal",
+          "offer": 0
+        }
+      ]
+    },
+    "page": 1,
+    "perpage": 10,
+    "size": 203
+  }
