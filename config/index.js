@@ -11,8 +11,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-       '/pinghongbao': {
-        target: 'https://api.pinghongbao.com',
+       // '/pinghongbao': {
+       '/hongbaos': {
+        // target: 'https://api.pinghongbao.com',
+        target: 'http://localhost:3000',
         changeOrigin: true
       }
     },

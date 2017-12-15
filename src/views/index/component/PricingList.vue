@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="body">
-            <p>{{pricing.title}} <img src="/src/assets/clock.png" alt="time">{{pricing.createtime}}</p>
+            <p>{{pricing.title}} <img src="/src/assets/clock.png" alt="time">{{pricing.createtime | formatTime}}</p>
           </div>
           <div class="bottom">
             <button class="pure-button" :class="{ 'button-secondary': type === 1, 'button-orange': type === 2 }" v-on:click="open(pricing.url)">已有{{pricing.offer}}位小伙伴从这里领取红包</button>
@@ -58,10 +58,18 @@ export default {
   computed: {
   },
 
+  filters: {
+    formatTime (time) {
+      let date = new Date(time)
+      return date.getHours() + ':' + date.getMinutes()
+    }
+  },
+
   methods: {
     initPricingList (type = 1, pageindex = 1) {
-      getPricingList({type: type, pageindex: pageindex}, (list) => {
-        this.pricingList = list
+      getPricingList({type: type, pageindex: pageindex}, (data) => {
+        console.log(1, data)
+        this.pricingList = data.result.data
       })
     },
 
@@ -82,8 +90,8 @@ export default {
     },
 
     open (url) {
-      console.log('open')
-      window.open('https://h5.ele.me/hongbao/#from=singlemessage#hardware_id=&is_lucky_group=True&lucky_number=6&track_id=&platform=0&sn=29dcbd64b01d0822&theme_id=1809&device_id=')
+      url = url.replace(/&amp;/g, '').replace(/amp;/g, '').replace('hardware_id', 'from=singlemessage#hardware_id')
+      window.open(url)
     }
   }
 }

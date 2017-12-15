@@ -3,12 +3,13 @@ import axios from 'axios'
 
 const getPricingList = (params = {type: 1, pageindex: 1}, success) => {
   // axios.get('/pinghongbao/api/hb/gethongbaopage', {
-  axios.get('/src/mocks/pricinglist.json', {
+  // axios.get('/src/mocks/pricinglist.json', {
+  axios.get('/hongbaos', {
     params: params
   })
   .then(res => {
-    console.log(res)
-    success(res.data.body.list)
+    console.log(res.data)
+    success(res.data)
   })
   .catch(function (error) {
     console.log(error)
