@@ -66,9 +66,8 @@ export default {
   },
 
   methods: {
-    initPricingList (type = 1, pageindex = 1) {
-      getPricingList({type: type, pageindex: pageindex}, (data) => {
-        console.log(1, data)
+    initPricingList (type = 1, page = 1) {
+      getPricingList({type: type, page: page}, (data) => {
         this.pricingList = data.result.data
       })
     },
@@ -78,14 +77,14 @@ export default {
         return
       }
 
-      getPricingList({type: 1, pageindex: --this.currentPage}, (list) => {
-        this.pricingList = list
+      getPricingList({type: 1, page: --this.currentPage}, (data) => {
+        this.pricingList = data.result.data
       })
     },
 
     nextPage () {
-      getPricingList({type: 1, pageindex: ++this.currentPage}, (list) => {
-        this.pricingList = list
+      getPricingList({type: 1, page: ++this.currentPage}, (data) => {
+        this.pricingList = data.result.data
       })
     },
 
