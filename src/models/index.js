@@ -4,7 +4,7 @@ import axios from 'axios'
 const getPricingList = (params = {type: 1, pageindex: 1}, success) => {
   // axios.get('/pinghongbao/api/hb/gethongbaopage', {
   // axios.get('/src/mocks/pricinglist.json', {
-  axios.get('/ticket', {
+  axios.get('http://localhost:3000/ticket', {
     params: params
   })
   .then(res => {
